@@ -6,7 +6,7 @@ import { Button } from "primereact/button";
 function Aboutus() {
   return (
     <div className="py-32">
-      <div className="mb-16 px-10 grid grid-cols-2">
+      <div className="mb-16 px-10 grid lg:grid-cols-2 gap-y-10">
         <HeadingTxt text="About us" />
         <div>
           <p>
@@ -50,11 +50,11 @@ function Aboutus() {
       </div>
 
       <div className="">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid lg:grid-cols-2 gap-y-7 px-5 lg:px-1 items-center">
           <img
             src="/img/about-ebube.jpg"
             alt="Okigwe Ebube Ireneaus image"
-            className="max-w-[500px] mx-auto"
+            className="lg:max-w-[500px] md:max-w-[300px] w-full mx-auto"
           />
           <div className="">
             <p className="font-bold text-lg">

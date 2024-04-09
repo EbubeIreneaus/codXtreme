@@ -28,9 +28,9 @@ function LatestWork() {
         <HeadingTxt text="Our Work" />
       </div>
 
-      <ul className="flex flex-wrap px-3 gap-3 w-fit mx-auto">
+      <ul className="flex flex-wrap px-3 gap-3 justify-center py-5">
         {works.map((work, index) => (
-          <li key={work.title} className="inline shadow-md  relative hover:-mt-5 transition-all ease-in-out duration-300">
+          <li key={work.title} className="inline shadow-md shadow-slate-200  relative hover:-mt-5 transition-all ease-in-out duration-300">
             <img
               src={`/img/work/${work.src}`}
               alt={work.title.toLowerCase()}

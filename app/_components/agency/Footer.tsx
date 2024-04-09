@@ -142,7 +142,7 @@ function Footer() {
               </span>
               Fedral Housing, Kubwa Abuja
             </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
+            <p className="mb-4 flex items-center justify-start">
               <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +155,7 @@ function Footer() {
               </span>
               info@codextreme.com
             </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
+            <p className="mb-4 flex items-center justify-start">
               <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +171,7 @@ function Footer() {
               </span>
               + 234 806 198 2520
             </p>
-            <p className="flex items-center justify-center md:justify-start">
+            <p className="flex items-center justify-start">
               <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

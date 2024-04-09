@@ -6,8 +6,8 @@ export default function Capabilities() {
   'social media marketing', 'e-commerce solutions']
   return (
     <div className="">
-      <div className="grid grid-cols-2 py-40 mb-20">
-        <div className="px-20 ">
+      <div className="grid lg:grid-cols-2 gap-y-10 py-40 pb-20">
+        <div className="lg:px-20 px-5 ">
           <HeadingTxt text="CAPABILITIES" />
         </div>
         <div>
@@ -56,7 +56,7 @@ export default function Capabilities() {
           <h2 className="text-4xl font-bold text-center">This Is How We Can Help You.</h2>
         </div>
         <div>
-            <ul className="grid grid-cols-3 gap-y-5 lg:w-[85%] mx-auto mb-20">
+            <ul className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-5 lg:w-[85%] mx-auto pb-20 md:px-1 px-7">
               {
                 services.map(service => (
                   <li key={service} className="flex gap-4 items-center capitalize">

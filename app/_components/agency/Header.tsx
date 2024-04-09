@@ -14,9 +14,9 @@ function Header() {
   }
   const navLinks = [
     { title: "home", href: "/", icon: "" },
-    { title: "about", href: "/service", icon: "" },
+    { title: "about", href: "/about", icon: "" },
     { title: "service", href: "/service", icon: "" },
-    { title: "project", href: "/project", icon: "" },
+    { title: "project", href: "/works", icon: "" },
     { title: "testimonial", href: "/testimonial", icon: "" },
     { title: "contact", href: "/contact", icon: "" },
   ];
