@@ -6,6 +6,8 @@ import Header from "./_components/agency/Header";
 import { Divider } from 'primereact/divider';
 import Capabilities from "./_components/agency/Capabilities";
 import LatestWork from "./_components/agency/LatestWork";
+import Aboutus from "./_components/agency/Aboutus";
+import Footer from "./_components/agency/Footer";
 
 export default function Home() {
   return (
@@ -52,6 +54,9 @@ export default function Home() {
 
         <Capabilities />
         <LatestWork />
+        <Aboutus />
+
+        <Footer />
     </div>
   );
 }
