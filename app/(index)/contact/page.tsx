@@ -37,9 +37,9 @@ function Service() {
         </div>
       </div>
 
-      <div className="py-20 px-10">
-        <div className="grid lg:grid-cols-2 lg:px-14 px-5">
-          <div className=" px-5">
+      <div className="py-20 md:px-10">
+        <div className="grid lg:grid-cols-2 gap-y-10 lg:px-14 px-5">
+          <div className=" lg:px-5">
             <HeadingTxt text="Contact Us" />
             <p className="my-14 text-sm">
               Let&rsquo;s make something great together! Use the form below to
