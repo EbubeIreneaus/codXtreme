@@ -4,6 +4,7 @@ import { Card } from "primereact/card";
 import { Toolbar } from "primereact/toolbar";
 import { Button } from "primereact/button";
 import SquareNewsComp from "./SquareNewsComp";
+import { NewsType } from "@/app/lib/News.types";
 
 function NewsAside() {
   let [popular_news, setPopularNews] = useState([]);
