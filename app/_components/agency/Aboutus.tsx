@@ -11,7 +11,7 @@ function Aboutus() {
       <div className="mb-16 px-10 grid lg:grid-cols-2 gap-y-10">
         <HeadingTxt text="About us" />
         <div>
-          <p>
+          <p data-aos="fade-right">
             At &nbsp;
             <span className="font-bold text-orange-400">
                CodXtreme Digital Solutions, 
@@ -59,13 +59,13 @@ function Aboutus() {
             className="lg:max-w-[500px] md:max-w-[300px] w-full mx-auto"
           />
           <div className="">
-            <p className="font-bold text-lg">
+            <p className="font-bold text-lg" data-aos="flip-up">
               Fullstack Developer | SEO Expert
             </p>
-            <h2 className="text-4xl font-bold mt-3 mb-10">
+            <h2 className="text-4xl font-bold mt-3 mb-10" data-aos="fade-right">
               Okigwe Ebube Ireneaus
             </h2>
-            <p className="max-w-xl">
+            <p className="max-w-xl" data-aos="fade-up">
               Passionate fullstack developer, I bring a wealth of experience in
               both refining existing webpage and crafting new once from grounds
               up. My comphrehensive skill set allows me to seamlessly integrate
@@ -82,11 +82,11 @@ function Aboutus() {
 
       <div className="mt-14 py-20 bg-black/70">
         <span className="text-center px-0.5 w-fit min-h-24 h-full block bg-orange-500 mx-auto my-10"></span>
-        <h2 className="text-5xl font-extrabold text-center mb-10">
+        <h2 className="text-5xl font-extrabold text-center mb-10" data-aos="fade-down">
           Don&rsquo;t Be Shy, Say Hello!
         </h2>
 
-        <Link href="/contact" className="w-fit mx-auto block">
+        <Link href="/contact" className="w-fit mx-auto block" data-aos="fade-right" data-aos-delay="500">
           <Button
             label="contact us"
             className="border-2  px-16 py-2 mx-auto border-orange-600 bg-transparent hover:bg-transparent"

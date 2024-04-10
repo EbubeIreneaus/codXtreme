@@ -15,7 +15,7 @@ function Service(){
           <div className=" w-full relative md:px-10 px-7 mt-[120px] z-[30] py-20">
             <div className="max-w-xl ">
               <HeadingTxt text="What we do?" /> <br />
-              <h2 className="text-5xl font-bold ">
+              <h2 className="text-5xl font-bold " data-aos="fade-up">
                 Ask Us About Branding, Design & Advertising.
               </h2>
             </div>

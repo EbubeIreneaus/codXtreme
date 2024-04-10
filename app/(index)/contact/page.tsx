@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import React, { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Service() {
   const [message, updateMessage] = useState({
@@ -30,7 +32,7 @@ function Service() {
         <div className=" w-full relative md:px-10 px-7 mt-[120px] z-[30] py-20">
           <div className="max-w-xl ">
             <HeadingTxt text="What we are" /> <br />
-            <h2 className="text-5xl font-bold ">
+            <h2 className="text-5xl font-bold " data-aos="fade-up">
               We’re A Digital Design & Branding Agency.
             </h2>
           </div>
@@ -41,7 +43,7 @@ function Service() {
         <div className="grid lg:grid-cols-2 gap-y-10 lg:px-14 px-5">
           <div className=" lg:px-5">
             <HeadingTxt text="Contact Us" />
-            <p className="my-14 text-sm">
+            <p className="my-14 text-sm" data-aos="fade-up">
               Let&rsquo;s make something great together! Use the form below to
               get in touch with us. Whether you&rsquo;re interested in our
               services, have a project idea in mind, or just want to connect,
@@ -50,17 +52,17 @@ function Service() {
               hear from you and start this exciting journey together!
             </p>
             <ul className="">
-              <li className="flex gap-5 mb-5 text-sm">
+              <li className="flex gap-5 mb-5 text-sm" data-aos="flip-up">
                 <i className="fa fa-map"></i>
                 <p>
                   Julius Berga camp, after fedral housing kubwa, Abuja, Nigeria
                 </p>
               </li>
-              <li className="flex gap-5 mb-5 text-sm">
+              <li className="flex gap-5 mb-5 text-sm" data-aos="flip-up">
                 <i className="fa fa-envelope"></i>
                 <p>agency@codextreme.com.ng</p>
               </li>
-              <li className="flex gap-5 mb-5 text-sm">
+              <li className="flex gap-5 mb-5 text-sm" data-aos="flip-up">
                 <i className="fa fa-phone"></i>
                 <p>+234 808 541 9653, +234 806 198 2520</p>
               </li>
@@ -96,8 +98,9 @@ function Service() {
               ></textarea>
             </div>
             <button className="px-20 py-2.5 border group bg-transparent hover:bg-transparent border-orange-400 hover:border-white">
-             <i className="fa fa-spinner animate-spin !hidden group-disabled:!inline-block"></i> <span> submit</span>
-            </button> 
+              <i className="fa fa-spinner animate-spin !hidden group-disabled:!inline-block"></i>{" "}
+              <span> submit</span>
+            </button>
           </form>
         </div>
       </div>
@@ -114,10 +117,10 @@ function Service() {
       </div>
 
       <div className="mt-14 py-20">
-        <h2 className="text-4xl font-extrabold text-center">Follow Us</h2>
+        <h2 className="text-4xl font-extrabold text-center" data-aos="flip-up">Follow Us</h2>
         <span className="text-center px-0.5 w-fit min-h-24 h-full block bg-orange-500 mx-auto my-10"></span>
 
-        <ul className="flex gap-5 justify-center">
+        <ul className="flex gap-5 justify-center" data-aos="fade-right">
           <a href="http://" target="_blank" rel="noopener noreferrer">
             <li>
               <i className="fa-brands fa-facebook fa-lg"></i>
@@ -143,12 +146,14 @@ function Service() {
 
       <div className="mt-14 py-20 bg-black/70">
         <span className="text-center px-0.5 w-fit min-h-24 h-full block bg-orange-500 mx-auto my-10"></span>
-        <h2 className="text-5xl font-extrabold text-center mb-10">
+        <h2 className="text-5xl font-extrabold text-center mb-10" data-aos="fade-up">
           Don&rsquo;t Be Shy, Say Hello!
         </h2>
 
         <Link href="/contact" className="w-fit mx-auto block">
           <Button
+            data-aos="fade-right"
+            data-aos-delay="500"
             label="contact us"
             className="border-2  px-20 py-2 mx-auto border-orange-600 bg-transparent hover:bg-transparent hover:border-white"
           />

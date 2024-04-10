@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import React, { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Testimony() {
   const reviews = [
@@ -56,7 +58,7 @@ function Testimony() {
         <div className="w-full relative md:px-10 px-7 mt-[120px] z-[30] py-20">
           <div className="max-w-2xl ">
             <HeadingTxt text="What They Say" /> <br />
-            <h2 className="text-5xl font-bold ">
+            <h2 className="text-5xl font-bold " data-aos="fade-up">
               We Build Valuable & Meaningful Experiences.
             </h2>
           </div>
@@ -67,66 +69,76 @@ function Testimony() {
         <div className=" py-32 bg-black text-white">
           <h2 className="text-lg font-extrabold text-center">Testimonial</h2>
           <span className="text-center px-0.5 w-fit min-h-24 h-full block bg-orange-500 mx-auto my-7"></span>
-          <h2 className="text-5xl font-extrabold text-center">
+          <h2
+            className="text-5xl font-extrabold text-center"
+            data-aos="fade-down"
+          >
             Why Our Client Love Us
           </h2>
 
-          <p className="text-center py-10 max-w-5xl px-5 mx-auto">
+          <p
+            className="text-center py-10 max-w-5xl px-5 mx-auto"
+            data-aos="fade-up"
+          >
             What sets us apart is our unwavering focus on exceeding client
             expectations. We go above and beyond to deliver exceptional service,
             consistently exceeding deadlines and surpassing project
             requirements. Our team of experts combines creativity, technical
             expertise, and industry knowledge to deliver innovative solutions
             that drive tangible results. With a client-centric approach at the
-            core of everything we do, it&rsquo;s no wonder our clients keep coming
-            back to us, time and time again.
+            core of everything we do, it&rsquo;s no wonder our clients keep
+            coming back to us, time and time again.
           </p>
         </div>
         <div>
-          {
-            reviews.map((review, index )=> {
-              if(index % 2 == 0){
-                return (
-                  <div className="grid lg:grid-cols-2" key={index}>
-                    <div className="w-full min-h-[100px] h-full bg-transparent "></div>
-                    <div className="bg-black text-white lg:min-h-[400px] py-32 lg:px-10 px-5">
-                      <p className="font-bold">{review.company}</p>
-                      <br />
-                      <HeadingTxt text={review.name} />
-                      <p className="text-sm mt-10">
-                        <q> {review.text} </q>
-                      </p>
-                    </div>
+          {reviews.map((review, index) => {
+            if (index % 2 == 0) {
+              return (
+                <div className="grid lg:grid-cols-2" key={index}>
+                  <div className="w-full min-h-[100px] h-full bg-transparent "></div>
+                  <div className="bg-black text-white lg:min-h-[400px] py-32 lg:px-10 px-5">
+                    <p className="font-bold" data-aos="fade-right">
+                      {review.company}
+                    </p>
+                    <br />
+                    <HeadingTxt text={review.name} />
+                    <p className="text-sm mt-10" data-aos="fade-up">
+                      <q> {review.text} </q>
+                    </p>
                   </div>
-                );
-              }else {
-                 return (
-                   <div className="grid lg:grid-cols-2" key={index}>
-                     <div className="bg-black text-white lg:min-h-[400px] py-32 lg:px-10 px-5 order-2 lg:order-1">
-                       <p className="font-bold">{review.company}</p>
-                       <br />
-                       <HeadingTxt text={review.name} />
-                       <p className="text-sm mt-10">
-                         <q> {review.text} </q>
-                       </p>
-                     </div>
-                     <div className="w-full min-h-[100px] h-full  bg-transparent !order-1 lg:!order-2"></div>
-                   </div>
-                 );
-              }
-            })
-          }
+                </div>
+              );
+            } else {
+              return (
+                <div className="grid lg:grid-cols-2" key={index}>
+                  <div className="bg-black text-white lg:min-h-[400px] py-32 lg:px-10 px-5 order-2 lg:order-1">
+                    <p className="font-bold" data-aos="fade-right">
+                      {review.company}
+                    </p>
+                    <br />
+                    <HeadingTxt text={review.name} />
+                    <p className="text-sm mt-10" data-aos="fade-up">
+                      <q> {review.text} </q>
+                    </p>
+                  </div>
+                  <div className="w-full min-h-[100px] h-full  bg-transparent !order-1 lg:!order-2"></div>
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
 
       <div className="mt-14 py-20 bg-slate-950">
         <span className="text-center px-0.5 w-fit min-h-24 h-full block bg-orange-500 mx-auto my-10"></span>
-        <h2 className="text-5xl font-extrabold text-center mb-10">
+        <h2 className="text-5xl font-extrabold text-center mb-10" data-aos="fade-up">
           Don&rsquo;t Be Shy, Say Hello!
         </h2>
 
         <Link href="/contact" className="w-fit mx-auto block">
           <Button
+            data-aos="fade-right"
+            data-aos-delay="500"
             label="contact us"
             className="px-24 py-2 mx-auto border-orange-600 bg-transparent hover:bg-transparent hover:border-white"
           />

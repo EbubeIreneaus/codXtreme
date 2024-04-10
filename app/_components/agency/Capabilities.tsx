@@ -13,10 +13,10 @@ export default function Capabilities() {
         <div>
           <ul className="px-5">
             <li className="mb-14">
-              <h2 className="text-2xl font-extrabold mb-5">
+              <h2 className="text-2xl font-extrabold mb-5" data-aos="flip-up">
                 Website / App Design
               </h2>
-              <p>
+              <p data-aos="fade-right">
                 Elevate your online presence with captivating designs that
                 seamlessly blend aesthetics with functionality. Our team crafts
                 visually stunning websites and user-friendly apps tailored to
@@ -25,8 +25,8 @@ export default function Capabilities() {
             </li>
 
             <li className="mb-14">
-              <h2 className="text-2xl font-extrabold mb-5">SEO Optimazation</h2>
-              <p>
+              <h2 className="text-2xl font-extrabold mb-5" data-aos="flip-up">SEO Optimazation</h2>
+              <p data-aos="fade-up">
                 Drive traffic and boost visibility with strategic SEO solutions.
                 We optimize your digital content and enhance your online
                 presence to rank higher on search engine results pages (SERPs),
@@ -36,8 +36,8 @@ export default function Capabilities() {
             </li>
 
             <li className="mb-5">
-              <h2 className="text-2xl font-extrabold mb-5">UI/UX Design</h2>
-              <p>
+              <h2 className="text-2xl font-extrabold mb-5" data-aos="flip-up">UI/UX Design</h2>
+              <p data-aos="fade-up">
                 We prioritize user satisfaction through intuitive interfaces and
                 smooth interactions. From wireframes to prototypes, our UI/UX
                 designs enhance usability, engagement, and overall customer
@@ -59,7 +59,7 @@ export default function Capabilities() {
             <ul className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-5 lg:w-[85%] mx-auto pb-20 md:px-1 px-7">
               {
                 services.map(service => (
-                  <li key={service} className="flex gap-4 items-center capitalize">
+                  <li key={service} className="flex gap-4 items-center capitalize" data-aos="flip-up">
                     <i className="fa fa-angle-right"></i>
                     <span>{service}</span>
                   </li>

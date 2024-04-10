@@ -5,6 +5,8 @@ import LatestWork from "@/app/_components/agency/LatestWork";
 import Link from "next/link";
 import { Button } from "primereact/button";
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Service() {
   return (
@@ -16,7 +18,7 @@ function Service() {
         <div className=" w-full relative md:px-10 px-7 mt-[120px] z-[30] py-20">
           <div className="max-w-xl ">
             <HeadingTxt text="What We Did?" /> <br />
-            <h2 className="text-5xl font-bold ">
+            <h2 className="text-5xl font-bold " data-aos="fade-up">
               We Take Great Pride In Our Work.
             </h2>
           </div>

@@ -26,11 +26,16 @@ export default function Home() {
       >
         <div className=" w-full relative md:px-10 px-7 mt-[120px] z-[30] ">
           <div className="max-w-xl ">
-            <h2 className="lg:text-6xl md:text-8xl text-6xl md:mt-10 lg:mt-0 mt-0 font-bold mb-12" data-aos="fade-up">
+            <h2
+              className="lg:text-6xl md:text-8xl text-6xl md:mt-10 lg:mt-0 mt-0 font-bold mb-12"
+              data-aos="fade-up"
+            >
               An Innovative Agency For Forward-thinking Brands.
             </h2>
             <Link href="/agency/about">
               <Button
+                data-aos="fade-right"
+                data-aos-delay="500"
                 label="Learn More"
                 className="w-[250px] z-30 py-2 ring-2 border-0 ring-orange-500 p-button bg-transparent hover:-mt-5 hover:bg-transparent 
                 hover:ring-white transition-all ease-in-out duration-500"
@@ -42,15 +47,15 @@ export default function Home() {
           <Divider color="orange" className="hidden lg:block" />
 
           <div className=" hidden lg:flex justify-between items-center px-5 py-7 mt-3">
-            <div>
+            <div data-aos="fade-up">
               <i className="fa fa-map"></i> &nbsp;
               <span>Kubwa fedral housing, Abuja</span>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="50">
               <i className="fa fa-envelope"></i> &nbsp;
               <span>agency@codextreme.com</span>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <i className="fa fa-phone"></i> &nbsp;
               <span>+234 808 541 9653</span>
             </div>
@@ -58,11 +63,11 @@ export default function Home() {
         </div>
       </div>
 
-        <Capabilities />
-        <LatestWork />
-        <Aboutus />
+      <Capabilities />
+      <LatestWork />
+      <Aboutus />
 
-        <Footer />
+      <Footer />
     </div>
   );
 }

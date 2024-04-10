@@ -30,7 +30,10 @@ function LatestWork() {
 
       <ul className="flex flex-wrap px-3 gap-3 justify-center py-5">
         {works.map((work, index) => (
-          <li key={work.title} className="inline shadow-md shadow-slate-200  relative hover:-mt-5 transition-all ease-in-out duration-300">
+          <li 
+          key={work.title} 
+          data-aos="fade-up"
+          className="inline shadow-md shadow-slate-200  relative hover:-mt-5 transition-all ease-in-out duration-300">
             <img
               src={`/img/work/${work.src}`}
               alt={work.title.toLowerCase()}
