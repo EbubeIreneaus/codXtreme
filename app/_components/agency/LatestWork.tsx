@@ -30,20 +30,20 @@ function LatestWork() {
 
       <ul className="flex flex-wrap px-3 gap-3 justify-center py-5">
         {works.map((work, index) => (
-          <li 
-          key={work.title} 
-          data-aos="fade-up"
-          className="inline shadow-md shadow-slate-200  relative hover:-mt-5 transition-all ease-in-out duration-300">
+          <li
+            key={work.title}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="inline shadow-md shadow-slate-200  relative hover:-mt-5 transition-all ease-in-out duration-300"
+          >
             <img
               src={`/img/work/${work.src}`}
               alt={work.title.toLowerCase()}
               className="object-cover max-h-[400px]"
             />
-           <div className="py-2 w-full absolute z-20 bg-orange-600/80 bottom-0 left-0 text-center font-semibold">
-            <p>
-              {work.title}
-            </p>
-           </div>
+            <div className="py-2 w-full absolute z-20 bg-orange-600/80 bottom-0 left-0 text-center font-semibold">
+              <p>{work.title}</p>
+            </div>
           </li>
         ))}
       </ul>
