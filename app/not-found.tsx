@@ -1,5 +1,5 @@
 import React from "react";
-import "../globals.css";
+import "./globals.css";
 import Link from "next/link";
 import { Button } from "primereact/button";
 
