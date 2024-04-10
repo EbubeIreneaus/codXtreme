@@ -63,10 +63,9 @@ function Header() {
 
           <ul className="flex flex-col gap-7 font-semibold">
             {navLinks.map((news) => (
-              <Link href={news.href}>
+              <Link href={news.href} key={news.title}>
                 <li
-                  key={news.title}
-                  onClick={()=>toggleNav()}
+                  onClick={() => toggleNav()}
                   className={`${
                     pathname === news.href ? "text-orange-600" : ""
                   } hover:text-orange-400`}
