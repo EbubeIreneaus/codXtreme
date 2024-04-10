@@ -12,9 +12,9 @@ function Aboutus() {
           <p>
             At &nbsp;
             <span className="font-bold text-orange-400">
-               CodXtreme Digital Solutions,
-            </span>
-            we're more than just a digital agency – we're your dedicated
+               CodXtreme Digital Solutions, 
+            </span> &nbsp;
+             we&rsquo;re more than just a digital agency – we&rsquo;re your dedicated
             partner in navigating the ever-evolving digital landscape. With a
             passion for innovation and a commitment to excellence, we specialize
             in crafting tailored solutions that drive growth, elevate brands,
@@ -30,9 +30,9 @@ function Aboutus() {
           </p>
           <br />
           <p>
-            Whether you're a startup looking to make a splash in the online
+            Whether you&rsquo;re a startup looking to make a splash in the online
             world or an established business seeking to enhance your digital
-            presence, we're here to help. From strategy to execution, we'll
+            presence, we&rsquo;re here to help. From strategy to execution, we&rsquo;ll
             guide you every step of the way, delivering creative solutions that
             make a real impact.
           </p>
@@ -81,7 +81,7 @@ function Aboutus() {
       <div className="mt-14 py-20 bg-black/70">
         <span className="text-center px-0.5 w-fit min-h-24 h-full block bg-orange-500 mx-auto my-10"></span>
         <h2 className="text-5xl font-extrabold text-center mb-10">
-          Don't Be Shy, Say Hello!
+          Don&rsquo;t Be Shy, Say Hello!
         </h2>
 
         <Link href="/contact" className="w-fit mx-auto block">
