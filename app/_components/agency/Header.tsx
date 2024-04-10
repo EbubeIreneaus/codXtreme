@@ -37,7 +37,7 @@ function Header() {
         <ul className="hidden lg:flex gap-7 font-semibold">
           {navLinks.map((news) => (
             <li
-            key={news.title}
+              key={news.title}
               className={`${
                 pathname === news.href ? "text-orange-600" : ""
               } hover:text-orange-400`}
@@ -54,20 +54,26 @@ function Header() {
         >
           <div className="bg-black-90 py-5 min-h-10 mb-5">
             <h2 className="text-xl lg:text-2xl font-extrabold flex items-center justify-end ">
-              <i className="fa fa-close px-2 py-1" onClick={()=>toggleNav()}></i>
+              <i
+                className="fa fa-close px-2 py-1"
+                onClick={() => toggleNav()}
+              ></i>
             </h2>
           </div>
 
           <ul className="flex flex-col gap-7 font-semibold">
             {navLinks.map((news) => (
-              <li
-              key={news.title}
-                className={`${
-                  pathname === news.href ? "text-orange-600" : ""
-                } hover:text-orange-400`}
-              >
-                <Link href={news.href}>{news.title}</Link>
-              </li>
+              <Link href={news.href}>
+                <li
+                  key={news.title}
+                  onClick={()=>toggleNav()}
+                  className={`${
+                    pathname === news.href ? "text-orange-600" : ""
+                  } hover:text-orange-400`}
+                >
+                  {news.title}
+                </li>
+              </Link>
             ))}
           </ul>
 
@@ -86,7 +92,7 @@ function Header() {
         <Button
           label=""
           className="bg-transparent border-0 hover:bg-transparent ring ring-orange-500 hover:ring-2 lg:hidden"
-          onClick={()=>toggleNav()}
+          onClick={() => toggleNav()}
         >
           <i className="fa fa-bars"></i>
         </Button>
