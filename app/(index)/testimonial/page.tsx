@@ -79,7 +79,7 @@ function Testimony() {
             expertise, and industry knowledge to deliver innovative solutions
             that drive tangible results. With a client-centric approach at the
             core of everything we do, it&rsquo;s no wonder our clients keep coming
-            back to us, time and time again."
+            back to us, time and time again.
           </p>
         </div>
         <div>
