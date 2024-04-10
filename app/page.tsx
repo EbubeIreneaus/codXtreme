@@ -8,8 +8,14 @@ import Capabilities from "./_components/agency/Capabilities";
 import LatestWork from "./_components/agency/LatestWork";
 import Aboutus from "./_components/agency/Aboutus";
 import Footer from "./_components/agency/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
+
 
 export default function Home() {
+ 
   return (
     <div className="bg-slate-950 text-white">
       <Header />
@@ -20,7 +26,7 @@ export default function Home() {
       >
         <div className=" w-full relative md:px-10 px-7 mt-[120px] z-[30] ">
           <div className="max-w-xl ">
-            <h2 className="lg:text-6xl md:text-8xl text-6xl md:mt-10 lg:mt-0 mt-0 font-bold mb-12">
+            <h2 className="lg:text-6xl md:text-8xl text-6xl md:mt-10 lg:mt-0 mt-0 font-bold mb-12" data-aos="fade-up">
               An Innovative Agency For Forward-thinking Brands.
             </h2>
             <Link href="/agency/about">

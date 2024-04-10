@@ -1,9 +1,11 @@
+
 import React from "react";
 import HeadingTxt from "./HeadingTxt";
 import Link from "next/link";
 import { Button } from "primereact/button";
 
 function Aboutus() {
+
   return (
     <div className="py-32">
       <div className="mb-16 px-10 grid lg:grid-cols-2 gap-y-10">

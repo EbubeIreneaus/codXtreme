@@ -8,6 +8,8 @@ import 'primeicons/primeicons.css'; // Icons
 import { PrimeReactProvider } from 'primereact/api';
 import Tailwind from 'primereact/passthrough/tailwind';
 import "../globals.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import Header from "../_components/agency/Header";
 import Footer from "../_components/agency/Footer";
 

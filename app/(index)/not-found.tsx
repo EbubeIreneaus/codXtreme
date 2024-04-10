@@ -3,7 +3,7 @@ import "../globals.css";
 import Link from "next/link";
 import { Button } from "primereact/button";
 
-function Name() {
+function NotFound() {
   return (
     <div className="h-screen w-screen">
       <div className="lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
@@ -40,4 +40,4 @@ function Name() {
   );
 }
 
-export default Name;
+export default NotFound;
