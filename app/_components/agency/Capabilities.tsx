@@ -20,7 +20,7 @@ export default function Capabilities() {
                 Elevate your online presence with captivating designs that
                 seamlessly blend aesthetics with functionality. Our team crafts
                 visually stunning websites and user-friendly apps tailored to
-                your brand's unique identity and goal
+                your brand&rsquo;s unique identity and goal
               </p>
             </li>
 
