@@ -10,11 +10,11 @@ function Aboutus() {
         <HeadingTxt text="About us" />
         <div>
           <p>
-            At{" "}
+            At &nbsp;
             <span className="font-bold text-orange-400">
-              CodXtreme Digital Solutions
+               CodXtreme Digital Solutions,
             </span>
-            , we're more than just a digital agency – we're your dedicated
+            we're more than just a digital agency – we're your dedicated
             partner in navigating the ever-evolving digital landscape. With a
             passion for innovation and a commitment to excellence, we specialize
             in crafting tailored solutions that drive growth, elevate brands,
@@ -39,10 +39,10 @@ function Aboutus() {
           <br />
           <p>
             Discover the difference that strategic thinking, creative flair, and
-            technical expertise can make for your business. Partner with{" "}
+            technical expertise can make for your business. Partner with &nbsp;
             <span className="font-bold text-orange-400">
               CodXtreme Digital Solutions
-            </span>{" "}
+            </span> &nbsp;
             and unlock the full potential of your digital journey.
           </p>
           <br />
